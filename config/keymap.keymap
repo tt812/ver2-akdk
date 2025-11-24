@@ -10,16 +10,16 @@
 &kp Q      &kp W  &kp E  &kp R  &kp T  &none  &none  &kp Y  &kp U  &kp I      &kp O          &kp P
 &kp A      &kp S  &kp D  &kp F  &kp G  &none         &kp H  &kp J  &kp K      &kp L          &kp SEMICOLON
 &kp Z      &kp X  &kp C  &kp V  &kp B  &none         &kp N  &kp M  &kp COMMA  &kp PERIOD     &kp SLASH
-&kp LCTRL                       &none  &none  &none  &none  &none  &kp RWIN   &kp RIGHT_ALT  &none
+&kp LCTRL                       &to 1  &none  &none  &none  &none  &kp RWIN   &kp RIGHT_ALT  &none
             >;
         };
 
         layer_1 {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none
-&none                       &none  &none  &none  &none  &none  &none  &none  &none
+&none      &none      &kp UP     &none      &none  &none  &none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp SLASH     &none
+&none      &kp LEFT   &kp DOWN   &kp RIGHT  &none  &none         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp ASTERISK  &none
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none  &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp MINUS     &none
+&none                                       &none  &none  &none  &kp NUMBER_0  &kp PERIOD    &kp LS(EQUAL)  &kp PLUS      &none
             >;
         };
 
