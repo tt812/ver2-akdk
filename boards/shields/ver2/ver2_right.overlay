@@ -56,6 +56,20 @@
             reg = <0>;
         };
     };
+ trackpad_listener: trackpad_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackpad>;
+    };
+
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+        trackball_split: trackball_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+        };
+    };
+
     trackball_split_listener: trackball_split_listener {
         compatible = "zmk,input-listener";
         device = <&trackball_split>;
@@ -64,7 +78,8 @@
         /* normal cursor movement + auto mouse layer (layer 5) */
         input-processors = <
             &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-            &zip_temp_layer 5 300>;
+            &zip_temp_layer 5 300
+        >;
 
         /* scroll mode when layer 7 is active */
         scroller {
@@ -73,13 +88,13 @@
             input-processors = <
                 &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
                 &zip_xy_to_scroll_mapper
-                &zip_scroll_scaler 1 5>;
+                &zip_scroll_scaler 1 5
+            >;
 
-            /* optional, but common */
             process-next;
+        };
     };
 };
-
 &physical_layout0 {
     kscan = <&kscan0>;
     transform = <&default_transform>;
