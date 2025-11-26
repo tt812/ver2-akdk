@@ -27,10 +27,10 @@
 
         layer_2 {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp AMPERSAND  &kp SQT        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL      &kp TILDE      &kp PIPE
-&kp F7           &kp F8             &kp F9    &kp F10     &kp F11      &kp F12                       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON  &kp COLON      &kp ENTER
-&kp F1           &kp F2             &kp F3    &kp F4      &kp F5       &kp F6                        &kp LESS_THAN         &kp GREATER_THAN       &kp SLASH      &kp BACKSLASH  &kp RIGHT_SHIFT
-&kp LCTRL                                                 &none        &none          &kp BACKSPACE  &mkp LCLK             &mkp RCLK              &kp AT_SIGN    &kp RIGHT_ALT  &none
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp AMPERSAND  &kp SQT        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL      &kp TILDE             &kp PIPE
+&kp F7           &kp F8             &kp F9    &kp F10     &kp F11      &kp F12                       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON  &kp COLON             &kp ENTER
+&kp F1           &kp F2             &kp F3    &kp F4      &kp F5       &kp F6                        &kp LESS_THAN         &kp GREATER_THAN       &kp SLASH      &kp NON_US_BACKSLASH  &kp RIGHT_SHIFT
+&kp LCTRL                                                 &none        &none          &kp BACKSPACE  &mkp LCLK             &mkp RCLK              &kp AT_SIGN    &kp RIGHT_ALT         &none
             >;
         };
 
