@@ -56,19 +56,6 @@
             reg = <0>;
         };
     };
- trackpad_listener: trackpad_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackpad>;
-    };
-
-    split_inputs {
-        #address-cells = <1>;
-        #size-cells = <0>;
-        trackball_split: trackball_split@0 {
-            compatible = "zmk,input-split";
-            reg = <0>;
-        };
-    };
 
     trackball_split_listener: trackball_split_listener {
         compatible = "zmk,input-listener";
