@@ -48,7 +48,7 @@
         layer_1 {
             bindings = <
 &kp LS(TAB)  &kp LA(LEFT)  &kp UP     &kp LA(RIGHT)  &kp PAGE_UP    &kp LC(LS(B))  &kp DELETE     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp SLASH     &kp EQUAL
-&kp TAB      &kp LEFT      &kp DOWN   &kp RIGHT      &kp PAGE_DOWN  &kp CLCK                      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp ASTERISK  &kp ENTER
+&kp TAB      &kp LEFT      &kp DOWN   &kp RIGHT      &kp PAGE_DOWN  &kp CLCK                      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp ASTERISK  &mt RIGHT_SHIFT ENTER
 &kp LC(Z)    &kp LC(X)     &kp LC(C)  &kp LC(V)      &kp LC(Y)      &kp LWIN                      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp MINUS     &kp RIGHT_SHIFT
 &kp LCTRL                                            &none          &none          &kp BACKSPACE  &kp NUMBER_0  &kp PERIOD    &kp LS(EQUAL)  &kp PLUS      &kp LC(RA(DELETE))
             >;
@@ -57,7 +57,7 @@
         layer_2 {
             bindings = <
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp AMPERSAND  &kp SQT        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL      &kp TILDE             &kp PIPE
-&kp F7           &kp F8             &kp F9    &kp F10     &kp F11      &kp F12                       &bracket              &paren                 &kp SEMICOLON  &kp COLON             &kp ENTER
+&kp F7           &kp F8             &kp F9    &kp F10     &kp F11      &kp F12                       &bracket              &paren                 &kp SEMICOLON  &kp COLON             &mt RIGHT_SHIFT ENTER
 &kp F1           &kp F2             &kp F3    &kp F4      &kp F5       &kp F6                        &brace                &thansign              &kp SLASH      &kp NON_US_BACKSLASH  &kp RIGHT_SHIFT
 &kp LCTRL                                                 &none        &none          &kp BACKSPACE  &mkp LCLK             &mkp RCLK              &kp AT_SIGN    &kp RIGHT_ALT         &none
             >;
