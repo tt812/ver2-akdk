@@ -81,7 +81,7 @@
 
         layer_2 {
             bindings = <
-&kp EXCLAMATION  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp JP_AMPERSAND  &kp JP_PIPE  &kp DELETE     &kp JP_RPAREN         &kp JP_RPAREN          &kp JP_QUOTE   &kp JP_DQUOTE         &kp JP_TILDE
+&kp EXCLAMATION  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp JP_AMPERSAND  &kp JP_PIPE  &kp DELETE     &kp JP_LPAREN         &kp JP_RPAREN          &kp JP_QUOTE   &kp JP_DQUOTE         &kp JP_TILDE
 &kp F7           &kp F8    &kp F9      &kp F10      &kp F11           &kp F12                     &kp JP_LBRACKET       &kp JP_RBRACKET        &kp SEMICOLON  &kp SINGLE_QUOTE      &mt RIGHT_SHIFT ENTER
 &kp F1           &kp F2    &kp F3      &kp F4       &kp F5            &kp F6                      &kp LESS_THAN         &kp GREATER_THAN       &kp SLASH      &kp JP_UNDERSCORE  &kp RIGHT_WIN
 &kp LCTRL                                           &none             &none        &kp BACKSPACE  &mkp LCLK             &mkp RCLK              &kp AT_SIGN    &kp RIGHT_ALT         &none
