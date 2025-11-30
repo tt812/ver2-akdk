@@ -72,7 +72,7 @@
 
         layer_1 {
             bindings = <
-&kp LS(TAB)  &kp LA(LEFT)  &kp UP     &kp LA(RIGHT)  &kp PAGE_UP    &kp LC(W)  &kp DELETE     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH        &kp JP_EQUAL
+&kp LS(TAB)  &kp LA(LEFT)  &kp UP     &kp LA(RIGHT)  &kp PAGE_UP    &kp LC(W)  &kp DELETE     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH        &kp MINUS
 &lt 4 TAB    &kp LEFT      &kp DOWN   &kp RIGHT      &kp PAGE_DOWN  &kp CLCK                  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_ASTERISK  &mt RIGHT_SHIFT ENTER
 &kp LC(Z)    &kp LC(X)     &kp LC(C)  &kp LC(V)      &kp LC(Y)      &kp LWIN                  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS        &mt RIGHT_WIN JP_UNDERSCORE
 &kp LCTRL                                            &none          &none      &kp BACKSPACE  &kp KP_NUMBER_0  &kp PERIOD       &kp JP_EQUAL     &kp JP_PLUS      &mt RCTRL LC(LA(DEL))
@@ -81,10 +81,10 @@
 
         layer_2 {
             bindings = <
-&kp EXCLAMATION  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp AMPERSAND  &kp PIPE  &kp DELETE     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SQT        &kp DOUBLE_QUOTES     &kp PIPE
-&kp F7           &kp F8    &kp F9      &kp F10      &kp F11        &kp F12                  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON  &kp COLON             &mt RIGHT_SHIFT ENTER
-&kp F1           &kp F2    &kp F3      &kp F4       &kp F5         &kp F6                   &kp LESS_THAN         &kp GREATER_THAN       &kp SLASH      &kp NON_US_BACKSLASH  &kp RIGHT_WIN
-&kp LCTRL                                           &none          &none     &kp BACKSPACE  &mkp LCLK             &mkp RCLK              &kp AT_SIGN    &kp RIGHT_ALT         &none
+&kp EXCLAMATION  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp JP_AMPERSAND  &kp JP_PIPE  &kp DELETE     &kp JP_RPAREN         &kp JP_RPAREN          &kp SQT        &kp JP_DQUOTE         &kp JP_EQUAL
+&kp F7           &kp F8    &kp F9      &kp F10      &kp F11           &kp F12                     &kp JP_LBRACKET       &kp BACKSLASH          &kp SEMICOLON  &kp SINGLE_QUOTE      &mt RIGHT_SHIFT ENTER
+&kp F1           &kp F2    &kp F3      &kp F4       &kp F5            &kp F6                      &kp LESS_THAN         &kp GREATER_THAN       &kp SLASH      &kp NON_US_BACKSLASH  &kp RIGHT_WIN
+&kp LCTRL                                           &none             &none        &kp BACKSPACE  &mkp LCLK             &mkp RCLK              &kp AT_SIGN    &kp RIGHT_ALT         &none
             >;
         };
 
