@@ -75,7 +75,7 @@
 
         layer_4 {
             bindings = <
-&trans  &trans          &msc SCRL_UP    &trans           &trans  &trans  &trans  &trans  &trans          &msc SCRL_UP    &trans           &trans
+&trans  &kp LC(TAB)     &msc SCRL_UP    &kp LC(LS(TAB))  &trans  &trans  &trans  &trans  &kp RC(TAB)     &msc SCRL_UP    &kp RC(RS(TAB))  &trans
 &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans          &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans
 &trans  &trans          &trans          &trans           &trans  &trans          &trans  &trans          &trans          &trans           &trans
 &trans                                                   &trans  &trans  &trans  &trans  &trans          &trans          &trans           &trans
