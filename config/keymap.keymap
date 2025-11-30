@@ -65,14 +65,14 @@
             bindings = <
 &kp Q      &kp W  &kp E  &kp R  &kp T        &kp LC(W)               &kp DELETE       &kp Y      &kp U          &kp I        &kp O          &kp P
 &kp A      &kp S  &kp D  &kp F  &kp G        &kp CAPSLOCK                             &kp H      &kp J          &kp K        &kp L          &mt RIGHT_SHIFT ENTER
-&kp Z      &kp X  &kp C  &kp V  &kp B        &mt LEFT_WIN BACKSLASH                   &kp N      &kp M          &kp COMMA    &kp DOT        &mt RIGHT_WIN BACKSLASH
+&kp Z      &kp X  &kp C  &kp V  &kp B        &mt LEFT_WIN BACKSLASH                   &kp N      &kp M          &kp COMMA    &kp DOT        &mt RIGHT_WIN JP_UNDERSCORE
 &kp LCTRL                       &lt 1 SPACE  &lt 2 INTERNATIONAL_5   &lt 1 BACKSPACE  &mkp LCLK  &lt 3 RS(F10)  &kp JP_AT    &kp RIGHT_ALT  &mt RCTRL ESC
             >;
         };
 
         layer_1 {
             bindings = <
-&kp LS(TAB)  &kp LA(LEFT)  &kp UP     &kp LA(RIGHT)  &kp PAGE_UP    &kp LC(W)  &kp DELETE     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH        &kp MINUS
+&kp LS(TAB)  &kp LA(LEFT)  &kp UP     &kp LA(RIGHT)  &kp PAGE_UP    &kp LC(W)  &kp DELETE     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH        &kp JP_YEN
 &lt 4 TAB    &kp LEFT      &kp DOWN   &kp RIGHT      &kp PAGE_DOWN  &kp CLCK                  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_ASTERISK  &mt RIGHT_SHIFT ENTER
 &kp LC(Z)    &kp LC(X)     &kp LC(C)  &kp LC(V)      &kp LC(Y)      &kp LWIN                  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS        &mt RIGHT_WIN JP_UNDERSCORE
 &kp LCTRL                                            &none          &none      &kp BACKSPACE  &kp KP_NUMBER_0  &kp PERIOD       &kp JP_EQUAL     &kp JP_PLUS      &mt RCTRL LC(LA(DEL))
@@ -81,7 +81,7 @@
 
         layer_2 {
             bindings = <
-&kp EXCLAMATION  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp JP_AMPERSAND  &kp JP_PIPE  &kp DELETE     &kp JP_RPAREN         &kp JP_RPAREN          &kp SQT        &kp JP_DQUOTE         &kp JP_EQUAL
+&kp EXCLAMATION  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp JP_AMPERSAND  &kp JP_PIPE  &kp DELETE     &kp JP_RPAREN         &kp JP_RPAREN          &kp SQT        &kp JP_DQUOTE         &kp JP_TILDE
 &kp F7           &kp F8    &kp F9      &kp F10      &kp F11           &kp F12                     &kp JP_LBRACKET       &kp BACKSLASH          &kp SEMICOLON  &kp SINGLE_QUOTE      &mt RIGHT_SHIFT ENTER
 &kp F1           &kp F2    &kp F3      &kp F4       &kp F5            &kp F6                      &kp LESS_THAN         &kp GREATER_THAN       &kp SLASH      &kp NON_US_BACKSLASH  &kp RIGHT_WIN
 &kp LCTRL                                           &none             &none        &kp BACKSPACE  &mkp LCLK             &mkp RCLK              &kp AT_SIGN    &kp RIGHT_ALT         &none
