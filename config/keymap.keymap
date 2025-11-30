@@ -39,7 +39,7 @@
 
         layer_0 {
             bindings = <
-&kp Q      &kp W  &kp E  &kp R  &kp T        &kp LG(TAB)             &kp DELETE       &kp Y      &kp U          &kp I        &kp O          &kp P
+&kp Q      &kp W  &kp E  &kp R  &kp T        &kp LG(LC(W))           &kp DELETE       &kp Y      &kp U          &kp I        &kp O          &kp P
 &kp A      &kp S  &kp D  &kp F  &kp G        &kp CAPSLOCK                             &kp H      &kp J          &kp K        &kp L          &mt RIGHT_SHIFT ENTER
 &kp Z      &kp X  &kp C  &kp V  &kp B        &mt LEFT_WIN BACKSLASH                   &kp N      &kp M          &kp COMMA    &kp DOT        &mt RIGHT_WIN BACKSLASH
 &kp LCTRL                       &lt 1 SPACE  &lt 2 INTERNATIONAL_5   &lt 1 BACKSPACE  &mkp LCLK  &lt 3 RS(F10)  &kp AT_SIGN  &kp RIGHT_ALT  &mt RCTRL ESC
@@ -48,10 +48,10 @@
 
         layer_1 {
             bindings = <
-&kp LS(TAB)  &kp LA(LEFT)  &kp UP     &kp LA(RIGHT)  &kp PAGE_UP    &kp LG(LC(D))  &kp DELETE     &kp NUMBER_7     &kp NUMBER_8     &kp NUMBER_9     &kp SLASH     &kp EQUAL
-&lt 4 TAB    &kp LEFT      &kp DOWN   &kp RIGHT      &kp PAGE_DOWN  &kp CLCK                      &kp NUMBER_4     &kp NUMBER_5     &kp NUMBER_6     &kp ASTERISK  &mt RIGHT_SHIFT ENTER
-&kp LC(Z)    &kp LC(X)     &kp LC(C)  &kp LC(V)      &kp LC(Y)      &kp LWIN                      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &mt RIGHT_WIN BACKSLASH
-&kp LCTRL                                            &none          &none          &kp BACKSPACE  &kp NUMBER_0     &kp PERIOD       &kp EQUAL        &kp PLUS      &mt RCTRL LC(LA(DEL))
+&kp LS(TAB)  &kp LA(LEFT)  &kp UP     &kp LA(RIGHT)  &kp PAGE_UP    &kp LC(W)  &kp DELETE     &kp NUMBER_7     &kp NUMBER_8     &kp NUMBER_9     &kp SLASH     &kp EQUAL
+&lt 4 TAB    &kp LEFT      &kp DOWN   &kp RIGHT      &kp PAGE_DOWN  &kp CLCK                  &kp NUMBER_4     &kp NUMBER_5     &kp NUMBER_6     &kp ASTERISK  &mt RIGHT_SHIFT ENTER
+&kp LC(Z)    &kp LC(X)     &kp LC(C)  &kp LC(V)      &kp LC(Y)      &kp LWIN                  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &mt RIGHT_WIN BACKSLASH
+&kp LCTRL                                            &none          &none      &kp BACKSPACE  &kp NUMBER_0     &kp PERIOD       &kp EQUAL        &kp PLUS      &mt RCTRL LC(LA(DEL))
             >;
         };
 
@@ -66,10 +66,10 @@
 
         layer_3 {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &kp PAGE_UP    &kp RA(LEFT_ARROW)  &kp UP_ARROW    &kp RA(RIGHT_ARROW)  &none
-&none  &none  &none  &none  &none  &none         &kp PAGE_DOWN  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &lt 4 ENTER
-&none  &none  &none  &none  &none  &none         &bt BT_SEL 0   &bt BT_SEL 1        &bt BT_SEL 2    &bt BT_SEL 3         &bt BT_SEL 4
-&none                       &none  &none  &none  &none          &none               &none           &none                &none
+&kp LS(TAB)  &none                   &kp LG(LC(D))   &none              &none  &none  &none  &kp PAGE_UP    &kp RA(LEFT_ARROW)  &kp UP_ARROW    &kp RA(RIGHT_ARROW)  &none
+&kp TAB      &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)     &kp LG(LC(RIGHT))  &none  &none         &kp PAGE_DOWN  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &lt 4 ENTER
+&none        &none                   &kp LC(LG(F4))  &none              &none  &none         &bt BT_SEL 0   &bt BT_SEL 1        &bt BT_SEL 2    &bt BT_SEL 3         &bt BT_SEL 4
+&none                                                                   &none  &none  &none  &none          &none               &none           &none                &none
             >;
         };
 
