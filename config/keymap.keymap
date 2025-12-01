@@ -66,7 +66,7 @@
 &kp Q      &kp W  &kp E  &kp R  &kp T        &none                   &kp DELETE       &kp Y      &kp U          &kp I                 &kp O          &kp P
 &kp A      &kp S  &kp D  &kp F  &kp G        &kp CAPSLOCK                             &kp H      &kp J          &kp K                 &kp L          &mt RIGHT_SHIFT ENTER
 &kp Z      &kp X  &kp C  &kp V  &kp B        &mt LEFT_WIN JP_YEN                      &kp N      &kp M          &kp COMMA             &kp DOT        &mt RIGHT_SHIFT JP_UNDERSCORE
-&kp LCTRL                       &lt 1 SPACE  &lt 2 INTERNATIONAL_5   &lt 1 BACKSPACE  &mkp LCLK  &lt 3 RS(F10)  &kp LEFT_WIN JP_AT    &kp RIGHT_ALT  &mt LCTRL ESC
+&kp LCTRL                       &lt 1 SPACE  &lt 2 INTERNATIONAL_5   &lt 1 BACKSPACE  &mkp LCLK  &lt 3 RS(F10)  &kp LEFT_WIN JP_AT    &mt RIGHT_ALT  &mt LCTRL ESC
             >;
         };
 
