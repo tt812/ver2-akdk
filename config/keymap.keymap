@@ -63,10 +63,10 @@
 
         layer_0 {
             bindings = <
-&kp Q      &kp W  &kp E  &kp R  &kp T        &none                   &kp DELETE       &kp Y      &kp U          &kp I                 &kp O          &kp P
-&kp A      &kp S  &kp D  &kp F  &kp G        &kp CAPSLOCK                             &kp H      &kp J          &kp K                 &kp L          &mt RIGHT_SHIFT ENTER
-&kp Z      &kp X  &kp C  &kp V  &kp B        &mt LEFT_WIN JP_YEN                      &kp N      &kp M          &kp COMMA             &kp DOT        &mt RIGHT_SHIFT JP_UNDERSCORE
-&kp LCTRL                       &lt 1 SPACE  &lt 2 INTERNATIONAL_5   &lt 1 BACKSPACE  &mkp LCLK  &lt 3 RS(F10)  &mt LEFT_WIN JP_AT    &kp RIGHT_ALT  &mt LCTRL ESC
+&kp Q      &kp W  &kp E  &kp R  &kp T        &none                  &kp DELETE       &kp Y     &kp U          &kp I               &kp O          &kp P
+&kp A      &kp S  &kp D  &kp F  &kp G        &kp CAPSLOCK                            &kp H     &kp J          &kp K               &kp L          &mt RIGHT_SHIFT ENTER
+&kp Z      &kp X  &kp C  &kp V  &kp B        &mt LEFT_WIN JP_YEN                     &kp N     &kp M          &kp COMMA           &kp DOT        &mt RIGHT_SHIFT JP_UNDERSCORE
+&kp LCTRL                       &lt 1 SPACE  &lt 2 INTERNATIONAL_5  &lt 1 BACKSPACE  &mkp MB1  &lt 3 RS(F10)  &mt LEFT_WIN JP_AT  &kp RIGHT_ALT  &mt LCTRL ESC
             >;
         };
 
@@ -81,10 +81,10 @@
 
         layer_2 {
             bindings = <
-&kp EXCLAMATION  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp JP_AMPERSAND  &kp JP_PIPE  &kp DELETE     &kp JP_LPAREN         &kp JP_RPAREN          &kp JP_QUOTE   &kp JP_DQUOTE         &kp JP_TILDE
-&kp F7           &kp F8    &kp F9      &kp F10      &kp F11           &kp F12                     &kp JP_LBRACKET       &kp JP_RBRACKET        &kp SEMICOLON  &kp SINGLE_QUOTE      &mt RIGHT_SHIFT ENTER
-&kp F1           &kp F2    &kp F3      &kp F4       &kp F5            &kp F6                      &kp LESS_THAN         &kp GREATER_THAN       &kp SLASH      &kp JP_UNDERSCORE  &kp RIGHT_WIN
-&kp LCTRL                                           &none             &none        &kp BACKSPACE  &mkp LCLK             &mkp RCLK              &kp AT_SIGN    &kp RIGHT_ALT         &none
+&kp EXCLAMATION  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp JP_AMPERSAND  &kp JP_PIPE  &kp DELETE     &kp JP_LPAREN    &kp JP_RPAREN     &kp JP_QUOTE   &kp JP_DQUOTE      &kp JP_TILDE
+&kp F7           &kp F8    &kp F9      &kp F10      &kp F11           &kp F12                     &kp JP_LBRACKET  &kp JP_RBRACKET   &kp SEMICOLON  &kp SINGLE_QUOTE   &mt RIGHT_SHIFT ENTER
+&kp F1           &kp F2    &kp F3      &kp F4       &kp F5            &kp F6                      &kp LESS_THAN    &kp GREATER_THAN  &kp SLASH      &kp JP_UNDERSCORE  &kp RIGHT_WIN
+&kp LCTRL                                           &none             &none        &kp BACKSPACE  &mkp LCLK        &mkp RCLK         &kp AT_SIGN    &kp RIGHT_ALT      &none
             >;
         };
 
@@ -108,10 +108,10 @@
 
         layer_5 {
             bindings = <
-&trans         &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(LS(B))  &mo 7   &mkp LCLK  &mkp RCLK  &trans  &trans          &trans  &trans  &trans  &trans  &kp RSHIFT
-&trans         &trans  &trans     &trans     &trans  &trans          &trans  &trans  &trans  &trans  &trans
-&trans                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(LS(B))  &mo 7   &mkp MB1  &mkp MB2  &trans  &trans          &trans  &trans  &trans  &trans  &kp RSHIFT
+&trans         &trans  &mkp MB3  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
