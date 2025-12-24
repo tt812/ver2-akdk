@@ -109,8 +109,8 @@
         layer_5 {
             bindings = <
 &trans         &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(LS(B))  &mo 7   &mkp MB1  &mkp MB2  &trans  &trans          &trans  &trans  &trans  &trans  &kp RSHIFT
-&trans         &trans  &mkp MB3  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&kp LC(LS(B))  &mo 7   &mkp MB1  &mkp MB2  &trans  &trans          &trans  &trans  &trans  &trans  &kp ENTER
+&trans         &trans  &mkp MB3  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &kp RSHIFT
 &trans                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
