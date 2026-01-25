@@ -64,16 +64,16 @@
         layer_0 {
             bindings = <
 &kp Q      &kp W  &kp E  &kp R  &kp T        &none                  &kp DELETE       &kp Y     &kp U          &kp I               &kp O          &kp P
-&kp A      &kp S  &kp D  &kp F  &kp G        &kp CAPSLOCK                            &kp H     &kp J          &kp K               &kp L          &mt RIGHT_SHIFT ENTER
+&kp A      &kp S  &kp D  &kp F  &kp G        &kp CAPSLOCK                            &kp H     &kp J          &kp K               &kp L          &mt LEFT_SHIFT ENTER
 &kp Z      &kp X  &kp C  &kp V  &kp B        &mt LEFT_WIN JP_YEN                     &kp N     &kp M          &kp COMMA           &kp DOT        &mt RIGHT_SHIFT JP_UNDERSCORE
-&kp LCTRL                       &lt 1 SPACE  &lt 2 INTERNATIONAL_5  &lt 1 BACKSPACE  &mkp MB1  &lt 3 RS(F10)  &mt LEFT_WIN JP_AT  &kp RIGHT_ALT  &mt LCTRL ESC
+&kp LCTRL                       &lt 1 SPACE  &lt 2 INTERNATIONAL_5  &lt 1 BACKSPACE  &mkp MB1  &lt 3 RS(F10)  &mt LEFT_WIN JP_AT  &kp LEFT_ALT   &mt LCTRL ESC
             >;
         };
 
         layer_1 {
             bindings = <
 &kp LS(TAB)  &kp LA(LEFT)  &kp UP     &kp LA(RIGHT)  &kp PAGE_UP    &kp LC(W)  &kp DELETE     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH        &kp MINUS
-&lt 4 TAB    &kp LEFT      &kp DOWN   &kp RIGHT      &kp PAGE_DOWN  &kp CLCK                  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_ASTERISK  &mt RIGHT_SHIFT ENTER
+&lt 4 TAB    &kp LEFT      &kp DOWN   &kp RIGHT      &kp PAGE_DOWN  &kp CLCK                  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_ASTERISK  &mt LEFT_SHIFT ENTER
 &kp LC(Z)    &kp LC(X)     &kp LC(C)  &kp LC(V)      &kp LC(Y)      &kp LWIN                  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS        &mt RIGHT_WIN JP_UNDERSCORE
 &kp LCTRL                                            &none          &none      &kp BACKSPACE  &kp KP_NUMBER_0  &kp PERIOD       &kp JP_EQUAL     &kp JP_PLUS      &mt RCTRL LC(LA(DEL))
             >;
@@ -82,9 +82,9 @@
         layer_2 {
             bindings = <
 &kp EXCLAMATION  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp JP_AMPERSAND  &kp JP_PIPE  &kp DELETE     &kp JP_LPAREN    &kp JP_RPAREN     &kp JP_QUOTE   &kp JP_DQUOTE      &kp JP_TILDE
-&kp F7           &kp F8    &kp F9      &kp F10      &kp F11           &kp F12                     &kp JP_LBRACKET  &kp JP_RBRACKET   &kp SEMICOLON  &kp SINGLE_QUOTE   &mt RIGHT_SHIFT ENTER
+&kp F7           &kp F8    &kp F9      &kp F10      &kp F11           &kp F12                     &kp JP_LBRACKET  &kp JP_RBRACKET   &kp SEMICOLON  &kp SINGLE_QUOTE   &mt LEFT_SHIFT ENTER
 &kp F1           &kp F2    &kp F3      &kp F4       &kp F5            &kp F6                      &kp LESS_THAN    &kp GREATER_THAN  &kp SLASH      &kp JP_UNDERSCORE  &kp RIGHT_WIN
-&kp LCTRL                                           &none             &none        &kp BACKSPACE  &mkp LCLK        &mkp RCLK         &kp AT_SIGN    &kp RIGHT_ALT      &none
+&kp LCTRL                                           &none             &none        &kp BACKSPACE  &mkp LCLK        &mkp RCLK         &kp AT_SIGN    &kp LEFT_ALT       &none
             >;
         };
 
@@ -109,7 +109,7 @@
         layer_5 {
             bindings = <
 &trans         &trans  &mkp MB3  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(LS(B))  &mo 7   &mkp MB1  &mkp MB2  &trans  &trans          &trans  &trans  &trans  &trans  &mt RIGHT_SHIFT ENTER
+&kp LC(LS(B))  &mo 7   &mkp MB1  &mkp MB2  &trans  &trans          &trans  &trans  &trans  &trans  &mt LEFT_SHIFT ENTER
 &trans         &trans  &trans    &trans    &trans  &trans          &trans  &trans  &trans  &trans  &kp RSHIFT
 &trans                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
