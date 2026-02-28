@@ -152,18 +152,9 @@
         mouse {
             bindings = <
 &trans         &trans  &mkp MB3  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(LS(B))  &mo 7   &mkp MB1  &mkp MB2  &trans  &trans          &trans  &trans  &trans  &trans  &mt LEFT_SHIFT ENTER
+&kp LC(LS(B))  &mo 6   &mkp MB1  &mkp MB2  &trans  &trans          &trans  &trans  &trans  &trans  &mt LEFT_SHIFT ENTER
 &trans         &trans  &trans    &trans    &trans  &trans          &trans  &trans  &trans  &trans  &kp RSHIFT
 &trans                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &none   &none   &trans  &trans  &trans
-&trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -176,7 +167,16 @@
             >;
         };
 
-        layer_8 {
+        iPad {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &none   &none   &trans  &trans  &trans
+&trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        iPad2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
