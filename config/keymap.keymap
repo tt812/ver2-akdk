@@ -96,7 +96,8 @@
             flavor = "tap-preferred";    // タップ操作を優先する設定
             tapping-term-ms = <200>;     // 200ミリ秒以上の長押しでレイヤー切り替え
             bindings = <&mo>, <&mkp>;
-    // 1つ目の引数にレイヤー(&mo)、2つ目にマウスボタン(&mkp)
+
+            // 1つ目の引数にレイヤー(&mo)、2つ目にマウスボタン(&mkp)
         };
     };
 
@@ -166,7 +167,7 @@
             >;
         };
 
-        layer_7 {
+        Mscroll {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
