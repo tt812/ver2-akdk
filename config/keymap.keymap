@@ -27,8 +27,8 @@
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
 
-/ { 
-   macros {
+/ {
+    macros {
         bracket: bracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -56,57 +56,63 @@
             bindings = <&kp LPAR &kp RPAR &kp LEFT_ARROW>;
             label = "PAREN";
         };
+
         sel_win_0: sel_win_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>, <&to 0>;
+            bindings = <&bt BT_SEL 0 &to 0>;
         };
+
         sel_win_1: sel_win_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&to 0>;
+            bindings = <&bt BT_SEL 1 &to 0>;
         };
+
         sel_win_2: sel_win_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2>, <&to 0>;
+            bindings = <&bt BT_SEL 2 &to 0>;
         };
+
         sel_ipad_3: sel_ipad_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 3>, <&to 8>;
+            bindings = <&bt BT_SEL 3 &to 8>;
         };
+
         sel_ipad_4: sel_ipad_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 4>, <&to 8>;
+            bindings = <&bt BT_SEL 4 &to 8>;
         }; //
     }; //
-
-        behaviors {
+    behaviors {
         // タップでマウスボタン、長押しでレイヤー移動するカスタム設定
+
         lt_mouse: lt_mouse {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";    // タップ操作を優先する設定
             tapping-term-ms = <200>;     // 200ミリ秒以上の長押しでレイヤー切り替え
-            bindings = <&mo>, <&mkp>;    // 1つ目の引数にレイヤー(&mo)、2つ目にマウスボタン(&mkp)
+            bindings = <&mo>, <&mkp>;
+    // 1つ目の引数にレイヤー(&mo)、2つ目にマウスボタン(&mkp)
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        Windows {
             bindings = <
-&kp Q      &kp W  &kp E  &kp R  &kp T        &none                  &kp DELETE       &kp Y     &kp U          &kp I               &kp O          &kp P
-&kp A      &kp S  &kp D  &kp F  &kp G        &kp CAPSLOCK                            &kp H     &kp J          &kp K               &kp L          &mt LEFT_SHIFT ENTER
-&kp Z      &kp X  &kp C  &kp V  &kp B        &mt LEFT_WIN JP_YEN                     &kp N     &kp M          &kp COMMA           &kp DOT        &mt RIGHT_SHIFT JP_UNDERSCORE
-&kp LCTRL                       &lt 1 SPACE  &lt 2 INTERNATIONAL_5  &lt 1 BACKSPACE  &mkp MB1  &lt 3 RS(F10)  &mt LEFT_WIN JP_AT  &kp LEFT_ALT   &mt LCTRL ESC
+&kp Q      &kp W  &kp E  &kp R  &kp T        &none                  &kp DELETE       &kp Y     &kp U          &kp I               &kp O         &kp P
+&kp A      &kp S  &kp D  &kp F  &kp G        &kp CAPSLOCK                            &kp H     &kp J          &kp K               &kp L         &mt LEFT_SHIFT ENTER
+&kp Z      &kp X  &kp C  &kp V  &kp B        &mt LEFT_WIN JP_YEN                     &kp N     &kp M          &kp COMMA           &kp DOT       &mt RIGHT_SHIFT JP_UNDERSCORE
+&kp LCTRL                       &lt 1 SPACE  &lt 2 INTERNATIONAL_5  &lt 1 BACKSPACE  &mkp MB1  &lt 3 RS(F10)  &mt LEFT_WIN JP_AT  &kp LEFT_ALT  &mt LCTRL ESC
             >;
         };
 
-        layer_1 {
+        Number {
             bindings = <
 &kp LS(TAB)  &kp LA(LEFT)  &kp UP     &kp LA(RIGHT)  &kp PAGE_UP    &kp LC(W)  &kp DELETE     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH        &kp MINUS
 &lt 4 TAB    &kp LEFT      &kp DOWN   &kp RIGHT      &kp PAGE_DOWN  &kp CLCK                  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_ASTERISK  &mt LEFT_SHIFT ENTER
@@ -115,7 +121,7 @@
             >;
         };
 
-        layer_2 {
+        Function {
             bindings = <
 &kp EXCLAMATION  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp JP_AMPERSAND  &kp JP_PIPE  &kp DELETE     &kp JP_LPAREN    &kp JP_RPAREN     &kp JP_QUOTE   &kp JP_DQUOTE      &kp JP_TILDE
 &kp F7           &kp F8    &kp F9      &kp F10      &kp F11           &kp F12                     &kp JP_LBRACKET  &kp JP_RBRACKET   &kp SEMICOLON  &kp SINGLE_QUOTE   &mt LEFT_SHIFT ENTER
@@ -126,14 +132,14 @@
 
         layer_3 {
             bindings = <
-&kp LS(TAB)  &none                   &kp LG(LC(D))   &none              &none  &none  &none            &kp PAGE_UP              &kp RA(LEFT_ARROW)  &kp UP_ARROW    &kp RA(RIGHT_ARROW)  &none
-&kp TAB      &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)     &kp LG(LC(RIGHT))  &none  &none                   &kp PAGE_DOWN            &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &lt 4 ENTER
-&none        &none                   &kp LC(LG(F4))  &none              &none  &none                   &sel_win_0               &sel_win_1          &sel_win_2      &sel_ipad_3          &sel_ipad_4
-&none                                                                   &none  &none  &lt 1 BACKSPACE  &mkp MB1                 &lt 3 RS(F10)       &none           &none                &none
+&kp LS(TAB)  &none                   &kp LG(LC(D))   &none              &none  &none  &none            &kp PAGE_UP    &kp RA(LEFT_ARROW)  &kp UP_ARROW    &kp RA(RIGHT_ARROW)  &none
+&kp TAB      &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)     &kp LG(LC(RIGHT))  &none  &none                   &kp PAGE_DOWN  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &lt 4 ENTER
+&none        &none                   &kp LC(LG(F4))  &none              &none  &none                   &sel_win_0     &sel_win_1          &sel_win_2      &sel_ipad_3          &sel_ipad_4
+&none                                                                   &none  &none  &lt 1 BACKSPACE  &mkp MB1       &lt 3 RS(F10)       &none           &none                &none
             >;
         };
 
-        layer_4 {
+        scroll {
             bindings = <
 &trans  &kp LC(TAB)     &msc SCRL_UP    &kp LC(LS(TAB))  &trans  &trans  &trans  &trans  &kp RC(TAB)     &msc SCRL_UP    &kp RC(RS(TAB))  &trans
 &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans          &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans
@@ -142,7 +148,7 @@
             >;
         };
 
-        layer_5 {
+        mouse {
             bindings = <
 &trans         &trans  &mkp MB3  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LC(LS(B))  &mo 7   &mkp MB1  &mkp MB2  &trans  &trans          &trans  &trans  &trans  &trans  &mt LEFT_SHIFT ENTER
@@ -188,6 +194,42 @@
         };
 
         layer_10 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_11 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_12 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_13 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_14 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
