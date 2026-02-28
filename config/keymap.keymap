@@ -27,10 +27,7 @@
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
 
-/ {
-   chosen {
-        zmk,physical-layout = &physical_layout0;
-    }; 
+/ { 
    macros {
         bracket: bracket {
             compatible = "zmk,behavior-macro";
