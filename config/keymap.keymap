@@ -129,7 +129,7 @@
 &kp LS(TAB)  &none                   &kp LG(LC(D))   &none              &none  &none  &none            &kp PAGE_UP              &kp RA(LEFT_ARROW)  &kp UP_ARROW    &kp RA(RIGHT_ARROW)  &none
 &kp TAB      &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)     &kp LG(LC(RIGHT))  &none  &none                   &kp PAGE_DOWN            &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &lt 4 ENTER
 &none        &none                   &kp LC(LG(F4))  &none              &none  &none                   &sel_win_0               &sel_win_1          &sel_win_2      &sel_ipad_3          &sel_ipad_4
-&none                                                                   &none  &none  &lt 1 BACKSPACE  &mkp MB1  &lt 3 RS(F10)  &none               &none           &none                &none
+&none                                                                   &none  &none  &lt 1 BACKSPACE  &mkp MB1                 &lt 3 RS(F10)       &none           &none                &none
             >;
         };
 
