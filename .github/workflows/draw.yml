@@ -2,7 +2,7 @@ name: Update Keymap Image
 on:
   push:
     branches:
-      - main     # あなたのメインブランチ名に合わせてください
+      - ver2-akdk     # あなたのメインブランチ名に合わせてください
     paths:
       - 'config/*.keymap'  # keymapファイルが更新された時だけ実行
       - 'config/*.yaml'    # 設定ファイルが更新された時も実行
