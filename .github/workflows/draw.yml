@@ -25,11 +25,12 @@ jobs:
         run: pip install keymap-drawer
 
       - name: Parse and Draw
-        run: |
+        run: |keymap parse -z config/keymap.keymap > keymap_drawn.yaml
+             
           # 1. ZMKのkeymapから描画用の中間YAMLを生成
           # config/adv360.keymap の部分は、ご自身のファイル名に変えてください
           keymap parse -z config/adv360.keymap > keymap_drawn.yaml
-          
+          keymap draw keymap_drawn.yaml > keymap_drawn.svg
           # 2. 中間YAMLからSVGを生成
           keymap draw keymap_drawn.yaml > keymap_drawn.svg
 
