@@ -4,8 +4,8 @@ on:
     branches:
       - ver2-akdk     # あなたのメインブランチ名に合わせてください
     paths:
-      - 'config/keymap.keymap'  # keymapファイルが更新された時だけ実行
-      - 'config/keymap.yaml'    # 設定ファイルが更新された時も実行
+      - 'config/*.keymap'  # keymapファイルが更新された時だけ実行
+      - 'config/*.yaml'    # 設定ファイルが更新された時も実行
 
 jobs:
   draw:
