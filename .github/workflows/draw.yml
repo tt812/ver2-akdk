@@ -1,0 +1,40 @@
+name: Update Keymap Image
+on:
+  push:
+    branches:
+      - main     # あなたのメインブランチ名に合わせてください
+    paths:
+      - 'config/*.keymap'  # keymapファイルが更新された時だけ実行
+      - 'config/*.yaml'    # 設定ファイルが更新された時も実行
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 生成した画像をリポジトリに書き戻す権限
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install keymap-drawer
+        run: pip install keymap-drawer
+
+      - name: Parse and Draw
+        run: |
+          # 1. ZMKのkeymapから描画用の中間YAMLを生成
+          # config/adv360.keymap の部分は、ご自身のファイル名に変えてください
+          keymap parse -z config/adv360.keymap > keymap_drawn.yaml
+          
+          # 2. 中間YAMLからSVGを生成
+          keymap draw keymap_drawn.yaml > keymap_drawn.svg
+
+      - name: Commit and Push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: self-generate keymap svg"
+          file_pattern: "keymap_drawn.svg"
