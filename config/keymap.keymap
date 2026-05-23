@@ -106,10 +106,10 @@
 
         Windows {
             bindings = <
-&kp Q      &kp W  &kp E  &kp R  &kp T        &none                  &kp DELETE       &kp Y     &kp U          &kp I               &kp O         &kp P
-&kp A      &kp S  &kp D  &kp F  &kp G        &kp CAPSLOCK                            &kp H     &kp J          &kp K               &kp L         &mt LEFT_SHIFT ENTER
-&kp Z      &kp X  &kp C  &kp V  &kp B        &mt LEFT_WIN JP_YEN                     &kp N     &kp M          &kp COMMA           &kp DOT       &mt RIGHT_SHIFT JP_UNDERSCORE
-&kp LCTRL                       &lt 1 SPACE  &lt 2 INTERNATIONAL_5  &lt 1 BACKSPACE  &mkp MB1  &lt 3 RS(F10)  &mt LEFT_WIN JP_AT  &kp LEFT_ALT  &mt LCTRL ESC
+&kp Q      &kp W  &kp E  &kp R  &kp T        &kp LG(TAB)            &kp DEL          &kp Y     &kp U     &kp I           &kp O           &kp P
+&kp A      &kp S  &kp D  &kp F  &kp G        &mt LALT CAPS                           &kp H     &kp J     &kp K           &kp L           &mt LEFT_SHIFT ENTER
+&kp Z      &kp X  &kp C  &kp V  &kp B        &mt LEFT_WIN LG(T)                      &kp N     &kp M     &kp COMMA       &kp PERIOD      &mt RIGHT_SHIFT JP_UNDERSCORE
+&kp LCTRL                       &lt 1 SPACE  &lt 2 INT5             &lt 3 BACKSPACE  &mkp MB1  &mkp MB2  &mt RWIN JP_AT  &mt RALT LG(S)  &mt RCTRL ESC
             >;
         };
 
