@@ -124,19 +124,19 @@
 
         Function {
             bindings = <
-&kp EXCLAMATION  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp JP_AMPERSAND  &kp JP_PIPE  &kp DELETE     &kp JP_LPAREN    &kp JP_RPAREN     &kp JP_QUOTE   &kp JP_DQUOTE      &kp JP_TILDE
+&kp EXCLAMATION  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp JP_AMPERSAND  &kp JP_PIPE  &kp DEL        &kp JP_QUOTE     &kp JP_DQUOTE     &kp JP_LPAREN  &kp JP_RPAREN      &kp JP_TILDE
 &kp F7           &kp F8    &kp F9      &kp F10      &kp F11           &kp F12                     &kp JP_LBRACKET  &kp JP_RBRACKET   &kp SEMICOLON  &kp SINGLE_QUOTE   &mt LEFT_SHIFT ENTER
-&kp F1           &kp F2    &kp F3      &kp F4       &kp F5            &kp F6                      &kp LESS_THAN    &kp GREATER_THAN  &kp SLASH      &kp JP_UNDERSCORE  &kp RIGHT_WIN
-&kp LCTRL                                           &none             &none        &kp BACKSPACE  &mkp LCLK        &mkp RCLK         &kp AT_SIGN    &kp LEFT_ALT       &none
+&kp F1           &kp F2    &kp F3      &kp F4       &kp F5            &kp F6                      &kp LESS_THAN    &kp GREATER_THAN  &kp SLASH      &kp JP_UNDERSCORE  &mt RIGHT_SHIFT JP_UNDERSCORE
+&kp LCTRL                                           &none             &none        &kp BACKSPACE  &none            &none             &none          &none              &mt RCTRL ESC
             >;
         };
 
         layer_3 {
             bindings = <
-&kp LS(TAB)  &none                   &kp LG(LC(D))   &none              &none  &none  &none            &kp PAGE_UP    &kp RA(LEFT_ARROW)  &kp UP_ARROW    &kp RA(RIGHT_ARROW)  &none
-&kp TAB      &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)     &kp LG(LC(RIGHT))  &none  &none                   &kp PAGE_DOWN  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &lt 4 ENTER
-&none        &none                   &kp LC(LG(F4))  &none              &none  &none                   &sel_win_0     &sel_win_1          &sel_win_2      &sel_ipad_3          &sel_ipad_4
-&none                                                                   &none  &none  &lt 1 BACKSPACE  &mkp MB1       &lt 3 RS(F10)       &none           &none                &none
+&kp LS(TAB)   &kp LA(LEFT)  &kp LG(UP)    &kp LA(RIGHT)  &none         &none  &none  &none  &kp RA(LEFT_ARROW)  &kp UP    &kp RA(RIGHT_ARROW)  &none
+&kp TAB       &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(RIGHT)  &bt BT_CLR    &none         &none  &kp LEFT            &kp DOWN  &kp RIGHT            &mt LEFT_SHIFT ENTER
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4  &none         &none  &none               &none     &none                &mt RIGHT_SHIFT JP_UNDERSCORE
+&none                                                    &none         &none  &none  &none  &none               &none     &none                &none
             >;
         };
 
