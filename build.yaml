@@ -8,5 +8,3 @@ include:
     shield: ver2_right
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_HID_REPORT_TYPE_NKRO=n
-  - board: akdk_bt1
-    shield: settings_reset
