@@ -41,17 +41,6 @@
 			,<&akdk_d 5 GPIO_ACTIVE_HIGH>
             ;
     };
-
-    split_inputs {
-        #address-cells = <1>;
-        #size-cells = <0>;
-
-        trackball_split: trackball_split@0 {
-            compatible = "zmk,input-split";
-            reg = <0>;
-            device = <&trackball>;
-        };
-    };
 };
 
 &physical_layout0 {
