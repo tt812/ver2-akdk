@@ -95,3 +95,28 @@
     };
 };
 
+/ {
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>; /* 直接接続されているトラックボールを指定 */
+        status = "okay";
+
+        /* 通常のカーソル移動 + オートマウスレイヤー（レイヤー5） */
+        input-processors = <
+            &zip_temp_layer 5 400
+            &zip_xy_scaler 4 7
+        >;
+
+        /* レイヤー6がアクティブな時はスクロールモード */
+        scroller {
+            layers = <6>;
+
+            input-processors = <
+                &zip_xy_to_scroll_mapper
+                &zip_scroll_scaler 2 10
+            >;
+
+            process-next;
+        };
+    };
+};
