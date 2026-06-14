@@ -41,6 +41,17 @@
 			,<&akdk_d 5 GPIO_ACTIVE_HIGH>
             ;
     };
+
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackball_split: trackball_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+            device = <&trackball>;
+        };
+    };
 };
 
 &physical_layout0 {
@@ -81,31 +92,5 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 15 GPIO_ACTIVE_LOW>;
-    };
-};
-
-/ {
-    trackball_listener: trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>; /* 直接接続されているトラックボールを指定 */
-        status = "okay";
-
-        /* 通常のカーソル移動 + オートマウスレイヤー（レイヤー5） */
-        input-processors = <
-            &zip_temp_layer 5 400
-            &zip_xy_scaler 4 7
-        >;
-
-        /* レイヤー6がアクティブな時はスクロールモード */
-        scroller {
-            layers = <6>;
-
-            input-processors = <
-                &zip_xy_to_scroll_mapper
-                &zip_scroll_scaler 2 10
-            >;
-
-            process-next;
-        };
     };
 };
